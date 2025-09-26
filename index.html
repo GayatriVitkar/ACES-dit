@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ACES — Association of Computer Engineering Students</title>
+  <meta name="description" content="ACES DIT — Innovate. Inspire. Ignite. Student-driven club for Computer Engineering at DIT, Pimpri.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="nav-wrap">
+    <div class="nav container">
+      <a class="brand" href="#">
+        <!-- simple SVG mark -->
+        <svg width="40" height="40" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="48" stroke="url(#grad1)" stroke-width="4" fill="none"/>
+            <path d="M30,70 L50,30 L70,70" stroke="url(#grad1)" stroke-width="6" fill="none" stroke-linecap="round"/>
+            <defs>
+              <linearGradient id="grad1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#7afcff"/>
+                <stop offset="100%" stop-color="#7b61ff"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <span>ACES</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#stats">Stats</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="cta" id="joinBtn">Join Us</button>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      
+    </div>
+
+    <!-- mobile menu
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <a href="#home" class="mm-link">Home</a>
+      <a href="#about" class="mm-link">About</a>
+      <a href="#stats" class="mm-link">Stats</a>
+      <a href="#events" class="mm-link">Events</a>
+      <a href="#contact" class="mm-link">Contact</a>
+    </div> -->
+  </header>
+
+  <!-- HERO -->
+  <main id="home">
+    <section class="hero">
+      <canvas id="particle-canvas" class="particle-canvas" aria-hidden="true"></canvas>
+
+      <div class="hero-inner container">
+        <div class="hero-copy">
+          <h1 class="hero-title"><span>ACES</span> — Masters of Excellence</h1>
+          <p class="hero-sub">Empowering Students from over a decade, Association of Computer Engineering Students strives to create a supportive & collaborative community for all round development.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#contact">Join Us Now</a>
+            <a class="btn btn-ghost" href="#events">Explore Events</a>
+          </div>
+        </div>
+
+        <div class="hero-card glass">
+          <div class="legacy">Legacy <strong>10+</strong> years</div>
+          <div class="mini-stats">
+            <div><strong>108+</strong><span>Events</span></div>
+            <div><strong>23,009+</strong><span>Participants</span></div>
+            <div><strong>2,400+</strong><span>Members</span></div>
+          </div>
+          <div class="hero-footer">
+            <small>Follow:</small>
+            <div class="socials">
+              <!-- inline SVG icons -->
+              <a href="https://www.instagram.com/aces.dit/" aria-label="Instagram" title="Instagram" class="social">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.3" fill="none"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/company/acesdit/" aria-label="LinkedIn" title="LinkedIn" class="social">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path d="M16 8a6 6 0 016 6v6h-4v-6a2 2 0 00-4 0v6h-4v-12h4v2" stroke="currentColor" stroke-width="1.3" fill="none"/></svg>
+              </a>
+              <a href="https://github.com/acesdit" aria-label="GitHub" title="GitHub" class="social">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 .5C5.5.5.5 5.6.5 12.1c0 5 3.3 9.2 7.9 10.7.6.1.8-.2.8-.5v-1.9c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1 1.6.8 1.9 1.2.1-.9.4-1.6.8-2-2.5-.3-5.2-1.3-5.2-5.6 0-1.2.4-2.2 1.1-3-.1-.3-.5-1.6.1-3.3 0 0 .9-.3 3 .1 1-.3 2-.5 3-.5s2 .2 3 .5c2.1-.4 3-.1 3-.1.6 1.8.2 3 .1 3.3.7.8 1.1 1.8 1.1 3 0 4.3-2.7 5.3-5.3 5.6.4.3.8 1 .8 2v3c0 .3.2.6.8.5 4.6-1.5 7.9-5.7 7.9-10.7C23.5 5.6 18.5.5 12 .5z" fill="currentColor"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-indicator" href="#about" aria-label="Scroll down">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about container">
+      <div class="about-inner">
+        <div class="about-card glass">
+          <h2>Who we are</h2>
+          <p>Association of Computer Engineering Students is a vibrant departmental club of the Department of Computer Engineering at Dr. D. Y. Patil Institute of Technology, Pimpri. Comprising passionate students, faculty mentors, and industry enthusiasts, ACES serves as a dynamic hub for fostering collaboration & innovation within the realm of computer engineering.</p>
+          <p class="muted">We organize events, workshops, hackathons, and seminars that connect students with practical skills and industry exposure.</p>
+        </div>
+
+        <div class="about-media">
+          <div class="floating-illustration">
+            <!-- decorative illustration (SVG) -->
+            <div class="about-media">
+                <img src="newteam.webp" alt="About ACES" class="about-img">
+              </div>
+              
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section id="stats" class="section stats">
+      <div class="container">
+        <h2 class="section-title">Our Achievements</h2>
+        <p class="section-sub">Celebrating years of impact, events, and learning.</p>
+
+        <div class="stats-grid">
+          <!-- Note: If ACES gives exact numbers, replace JS placeholders in script.js -->
+          <div class="stat-card glass" data-target="108">
+            <div class="stat-value"><span class="count">+</span></div>
+            <div class="stat-label">Events Organized</div>
+          </div>
+
+          <div class="stat-card glass" data-target="2400">
+            <div class="stat-value"><span class="count">+</span></div>
+            <div class="stat-label">Members</div>
+          </div>
+
+          <div class="stat-card glass" data-target="23009">
+            <div class="stat-value"><span class="count">+</span></div>
+            <div class="stat-label">Participants</div>
+          </div>
+
+          <div class="stat-card glass" data-target="10">
+            <div class="stat-value"><span class="count">10+</span></div>
+            <div class="stat-label">Years of Legacy</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENTS -->
+    <section id="events" class="section events container">
+        <h2 class="section-title">Featured Events</h2>
+        <p class="section-sub">Highlights from our latest editions — workshops, hacks & campus fest.</p>
+      
+        <div class="events-grid">
+          <article class="event-card">
+            <div class="event-media">
+              <img src="event2.jpg" alt="AI/ML Workshop Logo" class="event-logo">
+            </div>
+            <div class="event-body">
+              <h3>AI/ML Workshop Series</h3>
+              <p>Dive deep into artificial intelligence and machine learning with hands-on projects and industry experts.</p>
+              <div class="event-info">
+                <span>📅 March 15-17, 2024</span>
+                <span>📍 Engineering Lab A</span>
+                <span>👥 120 participants</span>
+              </div>
+              <a href="#" class="learn-more">Learn More</a>
+            </div>
+          </article>
+      
+          <article class="event-card">
+            <div class="event-media">
+              <img src="event4.webp" alt="Hackathon Logo" class="event-logo">
+            </div>
+            <div class="event-body">
+              <h3>Hackathon 2024</h3>
+              <p>48-hour coding marathon to solve real-world problems with innovative tech solutions.</p>
+              <div class="event-info">
+                <span>📅 April 22-24, 2024</span>
+                <span>📍 Main Auditorium</span>
+                <span>👥 200 participants</span>
+              </div>
+              <a href="#" class="learn-more">Learn More</a>
+            </div>
+          </article>
+      
+          <article class="event-card">
+            <div class="event-media">
+              <img src="event3.jpg" alt="Tech Career Fair Logo" class="event-logo">
+            </div>
+            <div class="event-body">
+              <h3>Tech Career Fair</h3>
+              <p>Connect with leading tech companies and explore internship and career opportunities.</p>
+              <div class="event-info">
+                <span>📅 May 10, 2024</span>
+                <span>📍 Student Center</span>
+                <span>👥 300 participants</span>
+              </div>
+              <a href="#" class="learn-more">Learn More</a>
+            </div>
+          </article>
+      
+          <article class="event-card">
+            <div class="event-media">
+              <img src="event1.jpg" alt="Cybersecurity Summit Logo" class="event-logo">
+            </div>
+            <div class="event-body">
+              <h3>Cybersecurity Summit</h3>
+              <p>Learn about the latest cybersecurity threats and defense strategies from industry professionals.</p>
+              <div class="event-info">
+                <span>📅 June 5-6, 2024</span>
+                <span>📍 Conference Hall</span>
+                <span>👥 150 participants</span>
+              </div>
+              <a href="#" class="learn-more">Learn More</a>
+            </div>
+          </article>
+        </div>
+      </section>
+      
+  
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container contact-grid">
+        <div class="contact-info glass">
+          <h2>Get in touch</h2>
+          <p>Have questions or want to collaborate? Reach out — we’d love to hear from you.</p>
+
+          <ul class="info-list">
+            <li><strong>Email:</strong> <a href="mailto:acesdit@gmail.com">acesdit@gmail.com</a></li>
+            <li><strong>Location:</strong> Pimpri Chinchwad, Pune, Maharashtra</li>
+            <li><strong>Legacy:</strong> 10+ years of empowering students</li>
+          </ul>
+
+          <div class="social-row">
+            <a href="https://www.instagram.com/aces.dit/" class="social big">Instagram</a>
+            <a href="https://www.linkedin.com/company/acesdit/" class="social big">LinkedIn</a>
+            <a href="https://github.com/acesdit" class="social big">GitHub</a>
+          </div>
+        </div>
+
+        <form id="contactForm" class="contact-form glass" novalidate>
+          <h3>Join / Contact</h3>
+          <p class="muted">Fill this form and our team will reach out.</p>
+
+          <label class="floating">
+            <input required type="text" name="name" id="name" placeholder=" " />
+            <span class="label">Your name</span>
+          </label>
+
+          <label class="floating">
+            <input required type="email" name="email" id="email" placeholder=" " />
+            <span class="label">Email</span>
+          </label>
+
+          <label class="floating">
+            <textarea required name="message" id="message" rows="4" placeholder=" "></textarea>
+            <span class="label">Message</span>
+          </label>
+
+          <button class="btn btn-primary" type="submit">Send Message</button>
+          <!-- <p class="form-note muted">This form doesn't actually send messages in this demo. Hook it up to your backend or Formspree.</p> -->
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>© 2024 Association of Computer Engineering Students, DIT. All rights reserved.</div>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/aces.dit/" aria-label="Instagram" class="social small">Instagram</a>
+          <a href="https://www.linkedin.com/company/acesdit/" aria-label="LinkedIn" class="social small">LinkedIn</a>
+          <a href="https://github.com/acesdit" aria-label="GitHub" class="social small">GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
