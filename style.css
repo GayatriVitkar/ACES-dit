@@ -175,8 +175,8 @@
   
   .about-media .about-img {
     width: 110%;
-    max-width: 700px;
-    height: 350px;
+    max-width: 600px;
+    height: auto ;
     border-radius: 14px; /* optional, matches your design */
     object-fit: cover; /* ensures image fills the container nicely */
   }
